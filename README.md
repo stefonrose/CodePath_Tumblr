@@ -22,6 +22,43 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 There were a few seemingly conflicting parts to the lab instruction.
 
+
+# Lab 2 - Tumblr
+
+Tumblr is a photo browsing app app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
+
+Time spent: 5 hours spent in total
+
+## User Stories
+
+The following **required** user stories are complete:
+
+- [x] User can tab an image to view a larger image in a detail view (5pts)
+
+The following **stretch** user stories are implemented:
+
+- [ ] Add Avatar and Publish Dates (+2pt)
+- [ ] Zoomable Photo View (+2pt)
+- [ ] Infinite Scrolling (+2pt)
+
+The following **additional** user stories are implemented:
+
+- [x] User can see the caption in addition to the individual image when they tab the image
+- [x] User can scroll down if the caption is too long to display on their screen
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+![Walkthrough 1](https://i.imgur.com/neVwSvH.gif)
+![Walkthrough 2](https://i.imgur.com/zSvfdhd.gif)
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+## Notes
+
+I spent a few hours troublshooting why if I clicked on any image in the table, only the first one would load. Turns out that in my prepareForSegue method, I had accidentally hard-coded it to pass it the first cell only every time instead of updating dynamically.
+
+
 ## License
 
     Copyright [2018] [Stephon Fonrose]

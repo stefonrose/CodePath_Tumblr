@@ -31,20 +31,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mja-6p-FeL">
-                                                    <rect key="frame" x="0.0" y="-1" width="375" height="165"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="164"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="photoView" destination="mja-6p-FeL" id="p4A-LX-u8a"/>
+                                            <segue destination="rWO-UY-ghh" kind="show" id="YNu-SB-mi6"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="fll-RH-ewW"/>
+                        <viewLayoutGuide key="safeArea" id="eUS-CC-xkP"/>
                     </view>
                     <navigationItem key="navigationItem" title="Tumblr" id="jzY-2E-HNK"/>
                     <connections>
@@ -54,6 +55,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JP5-oa-1M0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1114.4000000000001" y="-116.49175412293854"/>
+        </scene>
+        <!--Photo Details View Controller-->
+        <scene sceneID="3Bu-nc-TvZ">
+            <objects>
+                <viewController id="rWO-UY-ghh" customClass="PhotoDetailsViewController" customModule="Tumblr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="niL-9W-P7F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="be9-QA-r7h">
+                                <rect key="frame" x="16" y="266" width="342" height="361"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="I6f-Yx-lr1">
+                                        <rect key="frame" x="8" y="10" width="326" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p4H-eG-7JS">
+                                <rect key="frame" x="16" y="75" width="342" height="193"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yUW-mN-xgS"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailsLabel" destination="I6f-Yx-lr1" id="NX2-5q-pFn"/>
+                        <outlet property="photosImageView" destination="p4H-eG-7JS" id="wVn-Mo-pIi"/>
+                        <outlet property="scrollView" destination="be9-QA-r7h" id="zZh-tJ-tad"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ibZ-05-cmg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1853.5999999999999" y="-116.49175412293854"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GGV-6Q-knU">
