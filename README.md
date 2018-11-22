@@ -14,7 +14,7 @@ The following **required** user stories are complete:
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](https://i.imgur.com/yXUkMVB.gif)
+![Video Walkthrough](https://i.imgur.com/hFmeRzt.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
